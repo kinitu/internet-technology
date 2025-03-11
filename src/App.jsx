@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      {/* <div className='bg-red-500 text-lg'>Hello</div> */}
+      <div className='relative'>
       <Header/>
       <BrowserRouter>
         <Routes>
@@ -22,6 +22,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Footer/>
+      </div>
     </>
 
   )
