@@ -2,7 +2,7 @@ import React from 'react'
 
 function Input(props) {
     const {size, color} = props;
-    const defaultClass = "border-solid min-h-[30px] w-[200px] border-2 px-2 py-2"
+    const defaultClass = "border-solid min-h-[20px] w-[200px] border-2 px-2 py-2"
     const classes = {
         colors:{
             gray: "border-gray-500 bg-gray-200 text-blue-700",

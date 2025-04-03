@@ -1,9 +1,15 @@
-import React, { PureComponent } from 'react'
+import React, { PureComponent } from 'react';
+import Container from '../components/Container';
+import Counter from '../components/Counter';
 
 class About extends PureComponent {
     render() {
         return (
-            <div className='bg-orange-600 text-lg h-[100vh]'>About page</div>
+            <>
+                <Container>
+                    sd
+                </Container>
+            </>
         )
     }
 }
