@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Input(props) {
-    const {size, color} = props;
+    const {size, color, type, value, onChange} = props;
     const defaultClass = "border-solid min-h-[20px] w-[200px] border-2 px-2 py-2"
     const classes = {
         colors:{
@@ -18,7 +18,7 @@ function Input(props) {
     }
     return (
         <>
-            <input type="text" className={defaultClass+" "+classes.sizes[size]+" "+classes.colors[color]}/>
+            <input type={type} value={value} className={defaultClass+" "+classes.sizes[size]+" "+classes.colors[color]} onChange={onChange}/>
         </>
     )
 }

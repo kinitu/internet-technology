@@ -22,19 +22,23 @@ function Product() {
                 <div className='flex gap-2'>
                     <div>
                         <p>Название:</p> 
-                        <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} className='border-solid border-gray-500 border-2 px-1 bg-white'/>
+                        {/* <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} className='border-solid border-gray-500 border-2 px-1 bg-white'/> */}
+                        <Input type="text" value={title} onChange={(e) => setTitle(e.target.value)} size="small" color="gray"/>
                     </div>
                     <div>
                         <p>Описание:</p>
-                        <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} className='border-solid border-gray-500 border-2 px-1 bg-white'/>
+                        {/* <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} className='border-solid border-gray-500 border-2 px-1 bg-white'/> */}
+                        <Input type="text" value={description} onChange={(e) => setDescription(e.target.value)} size="small" color="gray"/>
                     </div>
                     <div>
                         <p>Цена:</p>
-                        <input type="text" value={price} onChange={(e) => setPrice(e.target.value)} className='border-solid border-gray-500 border-2 px-1 bg-white'/>
+                        {/* <input type="text" value={price} onChange={(e) => setPrice(e.target.value)} className='border-solid border-gray-500 border-2 px-1 bg-white'/> */}
+                        <Input type="text" value={price} onChange={(e) => setPrice(e.target.value)} size="small" color="gray"/>
                     </div>
                 </div>
                 <Button size='small' color='secondary' title='Добавить' onClick={addProduct}/>
             </div>
+
             <table class='table-auto w-2/5'>
                 <thead>
                     <tr>
